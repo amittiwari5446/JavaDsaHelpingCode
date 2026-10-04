@@ -25,7 +25,10 @@ public class StringMain {
         System.out.println("stripLeading(): "+str3.stripLeading());
         System.out.println("stripTrailing(): "+str3.stripTrailing());
 
-
+        String str4 = str3.replace("t","#");
+        String str5 = str3.replaceFirst("t","#");
+        System.out.println("replace('t','#'): "+str4);
+        System.out.println("replaceFirst('t','#'): "+str5);
 
 
     }
