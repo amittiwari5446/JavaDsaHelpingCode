@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class StringMain {
     public static void main(String[] args) {
         String str1=String.valueOf(123);
@@ -29,6 +32,20 @@ public class StringMain {
         String str5 = str3.replaceFirst("t","#");
         System.out.println("replace('t','#'): "+str4);
         System.out.println("replaceFirst('t','#'): "+str5);
+
+        String str6="Apple,Banana,Grapes,Guava";
+        String[] str7=str6.split(",");
+        String[] str8=str6.split(",",2);
+        System.out.println("split(','): "+ Arrays.toString(str7));
+        System.out.println("split(',',2): "+ Arrays.toString(str8));
+
+        String joined=String.join("-","Amit","Kumar","Tiwari");
+        System.out.println("String.join(): "+joined);
+        List<String> list= List.of("A","B","C");
+        String joined2=String.join("-",list);
+        System.out.println("join(): "+joined2);
+
+
 
 
     }
