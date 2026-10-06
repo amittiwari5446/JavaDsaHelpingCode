@@ -45,7 +45,16 @@ public class StringMain {
         String joined2=String.join("-",list);
         System.out.println("join(): "+joined2);
 
+        String str9=String.valueOf(100);
+        String str10=String.valueOf(true);
+        String str11=String.valueOf(3.14);
+        System.out.println("String.valueOf(): "+str9+", "+str10+", "+str11);
 
+        char[] ch={'a','b','c','d'};
+        String str12=new String(ch);
+        System.out.println("new String(): "+str12);
+        char[] ch2="Hello Brother!!".toCharArray();
+        System.out.println("toCharArray(): "+Arrays.toString(ch2));
 
 
     }
